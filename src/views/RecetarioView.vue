@@ -33,19 +33,6 @@
             </div>
             
             <div v-if="expandedRecetas[receta.nombre]" class="ingredientes-section">
-              <div class="multiplier-section">
-                <label class="multiplier-label">Multiplicador:</label>
-                <input 
-                  v-model.number="multiplicadores[receta.nombre]" 
-                  type="number" 
-                  min="0.1" 
-                  step="0.1" 
-                  placeholder="1"
-                  class="multiplier-input"
-                >
-                <span class="multiplier-hint">x</span>
-              </div>
-              
               <h4>Ingredientes</h4>
               <table class="ingredientes-table">
                 <thead>
@@ -65,6 +52,19 @@
                   </tr>
                 </tbody>
               </table>
+              
+              <div class="multiplier-section">
+                <label class="multiplier-label">Multiplicador:</label>
+                <input 
+                  v-model.number="multiplicadores[receta.nombre]" 
+                  type="number" 
+                  min="0.1" 
+                  step="0.1" 
+                  placeholder="1"
+                  class="multiplier-input"
+                >
+                <span class="multiplier-hint">x</span>
+              </div>
             </div>
           </div>
         </div>
@@ -272,7 +272,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-top: 16px;
   padding: 12px;
   background: var(--surface-variant);
   border-radius: var(--radius-md);
