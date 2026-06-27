@@ -1,0 +1,712 @@
+{
+  "Fuegos": [
+    {
+      "nombre": "Salsa Suquet",
+      "ingredientes": {
+        "ajo pelado": 20.0,
+        "cebolleta blanca": 180.0,
+        "hinojo": 160.0,
+        "azafran": 0.3,
+        "tomte pelado": 400.0,
+        "pasta de aji amarillo": 0.3,
+        "brandy": 15.0,
+        "vino blanco": 15.0,
+        "caldo de marisco": 1500.0,
+        "rendimiento": 1250.0
+      }
+    },
+    {
+      "nombre": "Sofrito",
+      "ingredientes": {
+        "Cebolla Blanca": 2000.0,
+        "Pimiento Rojo": 500.0,
+        "Pimiento Verde": 500.0,
+        "apio": 100.0,
+        "Tomate Rama": 110.0,
+        "Aceite Suave": 300.0,
+        "Ajo Pelado": 50.0,
+        "Carne Pimiento Choricero": 150.0,
+        "Sal Fina": 15.0,
+        "rendimiento": 2000.0
+      }
+    },
+    {
+      "nombre": "Causa",
+      "ingredientes": {
+        "patata": 3000.0,
+        "mantequilla": 450.0,
+        "yuca": 500.0,
+        "aceite de pimenton": 200.0,
+        "aceite suave": 200.0,
+        "sal fina": 45.0,
+        "rendimiento": 4250.0
+      }
+    },
+    {
+      "nombre": "Alino de Pulpo",
+      "ingredientes": {
+        "comino": 30.0,
+        "pimienta": 25.0,
+        "oregano": 10.0,
+        "sal fina": 100.0,
+        "aceite ahumado": 200.0,
+        "aceite suave 0'4": 200.0,
+        "vinagre de cidra": 200.0,
+        "ajo pelado": 60.0,
+        "cilantro": 100.0,
+        "aji panca": 2250.0,
+        "rendimiento": 3175.0
+      }
+    },
+    {
+      "nombre": "Caldo de Arroz Meloso",
+      "ingredientes": {
+        "caldo de pollo": 400.0,
+        "salsa de pitu": 165.0,
+        "sofrito de aji panca": 60.0,
+        "salsa de faisan": 100.0,
+        "rendimiento": 665.0
+      }
+    },
+    {
+      "nombre": "Caldo de Setas",
+      "ingredientes": {
+        "champinon portoblello": 350.0,
+        "Jengibre": 35.0,
+        "cebolla morada": 430.0,
+        "hinojo": 220.0,
+        "apio": 80.0,
+        "pedro ximenez": 150.0,
+        "salsa de soja": 15.0,
+        "romero": 7.0,
+        "chirivia": 100.0,
+        "zanahoria": 100.0,
+        "agua": 2000.0,
+        "rendimiento": 1650.0
+      }
+    },
+    {
+      "nombre": "Salsa de Cigala",
+      "ingredientes": {
+        "cabeza de cigala": 1000.0,
+        "aceite suave": 50.0,
+        "cebolleta": 270.0,
+        "zanahoria": 150.0,
+        "ajo": 70.0,
+        "apio": 70.0,
+        "hinojo": 170.0,
+        "tomate rama": 350.0,
+        "chile": 10.0,
+        "vino blanco": 100.0,
+        "Fumet": 1500.0,
+        "rendimiento": 1053.0
+      }
+    },
+    {
+      "nombre": "Patata Panadera Suquet",
+      "ingredientes": {
+        "patata": 700.0,
+        "cebolla blanca": 200.0,
+        "ajo": 20.0,
+        "aceite suave": 400.0,
+        "sal fina": 3.0,
+        "rendimiento": 1350.0
+      }
+    },
+    {
+      "nombre": "Arroz Acquerello",
+      "ingredientes": {
+        "arroz crudo": 1250.0,
+        "agua": 5000.0,
+        "rendimiento": 2500.0
+      }
+    },
+    {
+      "nombre": "Arroz CR7",
+      "ingredientes": {
+        "arroz en crudo": 2000.0,
+        "azafrán": 6.0,
+        "mantequilla": 80.0,
+        "sal": 15.0,
+        "aceite": 30.0,
+        "rendimiento": 2500.0
+      }
+    },
+    {
+      "nombre": "Arroz Salvaje",
+      "ingredientes": {
+        "arroz negro": 625.0,
+        "arroz rojo": 625.0,
+        "agua": 5000.0,
+        "rendimiento": 2500.0
+      }
+    },
+    {
+      "nombre": "Crema Verde",
+      "ingredientes": {
+        "patata": 85.0,
+        "Puerro": 200.0,
+        "Bimi tallos": 100,
+        "Ajo Aceite": 20.0,
+        "calabacin": 150.0,
+        "pak choy": 200.0,
+        "esparragos": 60.0,
+        "judias": 150.0,
+        "menta": 25.0,
+        "albahaca": 40.0,
+        "espinacas": 40.0,
+        "rendimiento": 800.0
+      }
+    },
+    {
+      "nombre": "Bivalvos",
+      "ingredientes": {
+        "mejillones": 8000.0,
+        "chirlas": 4000.0,
+        "ajo": 80.0,
+        "apio": 80.0,
+        "aceite suave": 80.0,
+        "vino blanco": 500.0,
+        "agua": 6000.0,
+        "maizena": 50,
+        "rendimiento": 12000.0
+      }
+    },
+    {
+      "nombre": "Chipirones Pelayo",
+      "ingredientes": {
+        "chipirones limpios": 23.0,
+        "cebolla pochada": 10.0,
+        "rendimiento": 33.0
+      }
+    },
+    {
+      "nombre": "Guiso de Codorniz",
+      "ingredientes": {
+        "Codorniz": 18.0,
+        "Tomate Rama": 600.0,
+        "Cebolla Morada": 2000.0,
+        "Aji Amarillo": 120.0,
+        "Cilanto": 100.0,
+        "Cerveza Negra": 666.0,
+        "Aceite Suave": 50.0,
+        "Sal Fina": 30.0,
+        "Caldo de Pollo": 1500.0,
+        "rendimiento": 3026.0
+      }
+    },
+    {
+      "nombre": "Cebolla Aji Mirasol",
+      "ingredientes": {
+        "aji mirasol": 100.0,
+        "ajo pelado": 80.0,
+        "cebolla pelada": 10000.0,
+        "rendimiento": 2900.0
+      }
+    },
+    {
+      "nombre": "Aceite de Pimenton",
+      "ingredientes": {
+        "pimenton de la vera": 100.0,
+        "cabeza de ajo": 120.0,
+        "aceite 0,4": 500.0,
+        "rendimiento": 500.0
+      }
+    }
+  ],
+  "Freidora": [
+    {
+      "nombre": "Tempura",
+      "ingredientes": {
+        "harina": 800.0,
+        "trisol": 150.0,
+        "rendimiento": 950.0
+      }
+    },
+    {
+      "nombre": "Farsa de Croquetas",
+      "ingredientes": {
+        "mantequilla": 600.0,
+        "harina pichi": 600.0,
+        "cebolla blanca": 2000.0,
+        "jamon": 600.0,
+        "leche": 4000.0,
+        "fondo de jamon": 2000.0,
+        "nata": 1000.0,
+        "sal fina": 20.0,
+        "gelatina": 30.0,
+        "pimienta": 4.0,
+        "rendimiento": 8400.0
+      }
+    },
+    {
+      "nombre": "Salsa de Oricio",
+      "ingredientes": {
+        "nata": 1000.0,
+        "chili garlic": 50.0,
+        "oricio": 240.0,
+        "rendimiento": 1190.0
+      }
+    },
+    {
+      "nombre": "Farsa de Bogavante",
+      "ingredientes": {
+        "apio nabo": 400.0,
+        "cebolleta blanca": 500.0,
+        "ajo pelado": 100.0,
+        "tomate rama": 800.0,
+        "brandy": 200.0,
+        "caldo de marisco": 1200.0,
+        "bogavante": 630.0,
+        "centolla": 400.0,
+        "cola de gambón": 600.0,
+        "rendimiento": 3100.0
+      }
+    },
+    {
+      "nombre": "Farsa de Zamburiñas",
+      "ingredientes": {
+        "nata": 1000.0,
+        "puerro": 1500.0,
+        "mantequilla": 150.0,
+        "zanahoria": 180.0,
+        "oricio": 115.0,
+        "sal fina": 3.0,
+        "pomodoro": 200.0,
+        "rendimiento": 1900.0
+      }
+    }
+  ],
+  "Parrilla": [
+    {
+      "nombre": "Patata Graten",
+      "ingredientes": {
+        "patatas": 800.0,
+        "nata": 300.0,
+        "sal fina": 2.0,
+        "rendimiento": 2500.0
+      }
+    },
+    {
+      "nombre": "Salsa de Tomate",
+      "ingredientes": {
+        "tomates pelados": 2000.0,
+        "sal fina": 20.0,
+        "azucar": 20.0,
+        "rendimiento": 2000.0
+      }
+    }
+  ],
+  "Fríos": [
+    {
+      "nombre": "Salsa de Ají Amarillo",
+      "ingredientes": {
+        "aji amarillo": 800.0,
+        "ajo pelado": 120.0,
+        "cebolla morada": 960.0,
+        "tallos de cilantro": 56.0,
+        "aceite 0,4": 1600.0,
+        "pimiento amarillo": 1040.0,
+        "sal": 96.0,
+        "jengibre": 144.0,
+        "lima": 1200.0,
+        "corvina": 360.0,
+        "rendimiento": 5600.0
+      }
+    },
+    {
+      "nombre": "Salpicon de Bogavante",
+      "ingredientes": {
+        "tomate": 300.0,
+        "pimiento rojo": 400.0,
+        "pimiento verde": 400.0,
+        "sal fina": 15.0,
+        "cebolla morada": 200.0,
+        "bogavante": 500.0,
+        "rendimiento": 1800.0
+      }
+    },
+    {
+      "nombre": "Ensaladilla",
+      "ingredientes": {
+        "zanahoria": 200.0,
+        "sal fina": 15.0,
+        "patata": 200.0,
+        "guisantes": 100.0,
+        "atun": 200.0,
+        "mayonesa": 100.0,
+        "rendimiento": 700.0
+      }
+    }
+  ],
+  "Postres": [
+    {
+      "nombre": "Mantequilla Noisette",
+      "ingredientes": {
+        "mantequilla": 1000.0,
+        "rendimiento": 730.0
+      }
+    },
+    {
+      "nombre": "Manzana Asada",
+      "ingredientes": {
+        "manzana reineta": 159.0,
+        "agua": 15.0,
+        "limon": 5.0,
+        "rendimiento": 99.0
+      }
+    },
+    {
+      "nombre": "Compota de Manzana",
+      "ingredientes": {
+        "manzana asada": 1000.0,
+        "agua": 150.0,
+        "caramelo salado": 100.0,
+        "rendimiento": 1150.0
+      }
+    },
+    {
+      "nombre": "Relleno de Manzana",
+      "ingredientes": {
+        "manzana granny smith": 500.0,
+        "azucar blanco": 50.0,
+        "mantequilla noisette": 30.0,
+        "limon": 10.0,
+        "extracto de vainilla": 6.0,
+        "canela molida": 0.5,
+        "compota de manzana": 36.0,
+        "sal fina": 1.0,
+        "rendimiento": 472.0
+      }
+    },
+    {
+      "nombre": "Caramelo Salado",
+      "ingredientes": {
+        "azucar blanco": 190.0,
+        "glucosa líquida": 62.0,
+        "agua fría": 60.0,
+        "agua caliente": 90.0,
+        "nata": 160.0,
+        "sal fina": 6.0,
+        "rendimiento": 345.0
+      }
+    },
+    {
+      "nombre": "Tocinillo de Cielo",
+      "ingredientes": {
+        "agua": 250.0,
+        "azucar blanco": 400.0,
+        "yema de huevo": 500.0,
+        "extracto de vainilla": 15.0,
+        "sal fina": 3.0,
+        "rendimiento": 1011.0
+      }
+    },
+    {
+      "nombre": "Chantilly",
+      "ingredientes": {
+        "nata": 200.0,
+        "extracto de vainilla": 3.0,
+        "nata acidificada": 50.0,
+        "azucar glass": 20.0,
+        "sal fina": 1.0,
+        "amontillado": 20.0,
+        "rendimiento": 294.0
+      }
+    },
+    {
+      "nombre": "Teja de Piñones",
+      "ingredientes": {
+        "agua": 80.0,
+        "aceite de girasol": 30.0,
+        "harina pichi": 10.0,
+        "azucar glass": 5.0,
+        "aroma de almendras": 3.0,
+        "piñones": 7.0,
+        "rendimiento": 125.0
+      }
+    },
+    {
+      "nombre": "Caramelo",
+      "ingredientes": {
+        "agua": 60.0,
+        "azucar blanco": 180.0,
+        "rendimiento": 178.0
+      }
+    },
+    {
+      "nombre": "Masa de Crostata",
+      "ingredientes": {
+        "yema de huevo pasteurizada": 36.0,
+        "huevos": 60.0,
+        "azucar blanco": 100.0,
+        "harina pichi": 240.0,
+        "levadura royal": 4.8,
+        "mantequilla noisette": 89.0,
+        "harina de centeno eco integral": 80.0,
+        "rendimiento": 500.0
+      }
+    },
+    {
+      "nombre": "Frutos Rojos Macerados",
+      "ingredientes": {
+        "freson extra/premium": 125.0,
+        "cereza premium": 125.0,
+        "frambuesas": 125.0,
+        "grosella": 125.0,
+        "moras bandeja": 125.0,
+        "arandanos": 125.0,
+        "rendimiento": 1198.0
+      }
+    },
+    {
+      "nombre": "Mermelada de Fresa",
+      "ingredientes": {
+        "polvo de fresa lactofermentada": 14.6,
+        "agua": 30.0,
+        "freson extra/premium": 1395.0,
+        "azucar blanco": 350.0,
+        "limon": 70.0,
+        "extracto de vainilla": 14.0,
+        "rendimiento": 1198.0
+      }
+    },
+    {
+      "nombre": "Gel de Frutos Rojos",
+      "ingredientes": {
+        "frutos rojos macerados": 310.0,
+        "mantequilla": 55.0,
+        "rendimiento": 316.0
+      }
+    },
+    {
+      "nombre": "Glaseada de Huevo",
+      "ingredientes": {
+        "yema de huevo pasteurizada": 120.0,
+        "leche entera": 60.0,
+        "rendimiento": 180.0
+      }
+    },
+    {
+      "nombre": "Polvo De Fresa Lactofermentada",
+      "ingredientes": {
+        "freson extra/premium": 2000.0,
+        "sal fina": 40.0,
+        "rendimiento": 68.0
+      }
+    },
+    {
+      "nombre": "Crema Inglesa de Naranja",
+      "ingredientes": {
+        "leche entera": 250.0,
+        "nata": 250.0,
+        "azucar blanco": 75.0,
+        "yema de huevo pasteurizada": 150.0,
+        "sal fina": 2.0,
+        "ralladura de naranja": 2.0,
+        "mantequilla": 30.0,
+        "rendimiento": 638.0
+      }
+    },
+    {
+      "nombre": "Remojo de Coco",
+      "ingredientes": {
+        "leche entera": 1400.0,
+        "leche de coco": 1400.0,
+        "nata": 1000.0,
+        "coco rallado": 40.0,
+        "canela en rama": 0.5,
+        "rendimiento": 3750.0
+      }
+    },
+    {
+      "nombre": "Galleta de Coco y Pecanas",
+      "ingredientes": {
+        "nueces mitades": 180.0,
+        "coco rallado": 120.0,
+        "sal fina": 3.0,
+        "azucar blanco": 105.0,
+        "mantequilla": 100.0,
+        "rendimiento": 508.0
+      }
+    },
+    {
+      "nombre": "Mermelada de Higos",
+      "ingredientes": {
+        "higos secos": 340.0,
+        "azucar blanco": 415.0,
+        "naranja zumo": 473.0,
+        "vinagre de cidra": 44.0,
+        "zumo de naranja": 16.0,
+        "limon": 30.0,
+        "extracto de vainilla": 10.0,
+        "sal fina": 3.0,
+        "rendimiento": 1330.0
+      }
+    },
+    {
+      "nombre": "Bizcocho de Chocolate con Manzana",
+      "ingredientes": {
+        "mantequilla":115.0,
+        "chocolate guanaja": 212.0,
+        "miel": 170.0,
+        "compota de manzana": 125.0,
+        "cacao en polvo": 25.0,
+        "canela molida": 0.5,
+        "yema de huevo pasteurizada": 54.0,
+        "huevos": 90.0,
+        "sal fina": 3.0,
+        "rendimiento": 794.5
+      }
+    },
+    {
+      "nombre": "Ganache de Guanaja y Caramelia",
+      "ingredientes": {
+        "chocolate guanaja": 340.0,
+        "caramelia": 160.0,
+        "nata": 949.0,
+        "miel": 45.0,
+        "sal fina": 3.0,
+        "mantequilla": 89.0,
+        "rendimiento": 1586.0
+        
+      }
+    },
+    {
+      "nombre": "Crujiente de Miel",
+      "ingredientes": {
+        "azucar blanco": 300.0,
+        "agua": 118.0,
+        "miel": 63.0,
+        "glucosa líquida": 113.0,
+        "bicarbonato": 16.0,
+        "rendimiento": 610.0
+        
+      }
+    },
+    {
+      "nombre": "Remojo de Crema de Orujo",
+      "ingredientes": {
+        "crema de orujo ruavieja": 700.0,
+        "leche entera": 1000.0,
+        "nata": 450.0,
+        "mascarpone": 725.0,
+        "azucar blanco": 75.0,
+        "sal fina": 3.0,
+        "extracto de vainilla": 20.0,
+        "rendimiento": 2973.0
+      }
+    }
+  ],
+  "Fondos": [
+    {
+      "nombre": "Caldo de Pollo",
+      "ingredientes": {
+        "gallina": 3000.0,
+        "carcasa de pollo": 2000.0,
+        "puerros": 1500.0,
+        "cebolla pelada": 2500.0,
+        "pimiento verde": 230.0,
+        "pimiento rojo": 230.0,
+        "aceite suave": 750.0,
+        "sal fina": 250.0,
+        "zanahoria": 450.0,
+        "ajo pelado": 250.0,
+        "apio": 250.0,
+        "jengibre": 250.0,
+        "perejil": 125.0,
+        "agua": 50000.0,
+        "rendimiento": 32000.0
+      }
+    },
+    {
+      "nombre": "Pomodoro",
+      "ingredientes": {
+        "aceite oliva": 400.0,
+        "ajo pelado": 400.0,
+        "cebolla pelada": 3000.0,
+        "puerros": 1200.0,
+        "zanahoria": 600.0,
+        "apio": 400.0,
+        "sal fina": 300.0,
+        "vino blanco": 400.0,
+        "tomate san marzano": 12.0,
+        "tomate concentrado": 1760.0,
+        "albahaca": 200.0,
+        "azucar": 600.0,
+        "pimienta": 40.0,
+        "rendimiento": 36000.0
+      }
+    },
+    {
+      "nombre": "Caldo de gallina",
+      "ingredientes": {
+        "cebolla blanca": 10000.0,
+        "puerros": 6000.0,
+        "apio": 810.0,
+        "jengibre": 1200.0,
+        "ajo pelado": 1000.0,
+        "pimiento verde": 900.0,
+        "pimiento rojo": 900.0,
+        "zanahoria": 1800.0,
+        "perejil": 500.0,
+        "gallina": 12000.0,
+        "aceite": 2500.0,
+        "agua": 180000.0,
+        "sal": 1000.0,
+        "rendimiento": 127000.0
+      }
+    },
+    {
+      "nombre": "Bisque de carabineros",
+      "ingredientes": {
+        "cebolla blanca": 10000.0,
+        "puerros": 6000.0,
+        "apio": 810.0,
+        "jengibre": 1200.0,
+        "ajo pelado": 1000.0,
+        "pimiento verde": 500.0,
+        "pimiento rojo": 900.0,
+        "zanahoria": 1800.0,
+        "perejil": 500.0,
+        "aceite": 2500.0,
+        "agua": 180000.0,
+        "vino blanco": 1000.0,
+        "brandy o coñac": 1000.0,
+        "tomate concentrado": 1600.0,
+        "tomate multipelate": 3.0,
+        "pimienta negra grano": 100.0,
+        "cabeza de carabineros": 25000.0,
+        "comino molido": 30.0,
+        "sal": 1000.0,
+        "rendimiento": 102000.0
+      }
+    },
+    {
+      "nombre": "Fumet",
+      "ingredientes": {
+        "hueso de pescado": 2400.0,
+        "jengibre": 100.0,
+        "cebolla pelada": 1000.0,
+        "pimiento verde": 1000.0,
+        "pimiento rojo": 1000.0,
+        "zanahoria": 1000.0,
+        "apio": 450.0,
+        "agua": 4000.0,
+        "rendimiento": 6500.0
+      }
+    },
+    {
+      "nombre": "Salsa Verde",
+      "ingredientes": {
+        "aceite 0,4": 300.0,
+        "harina pichi": 300.0,
+        "perejil": 110.0,
+        "maizena": 100.0,
+        "fumet": 4000.0,
+        "ajo pelado": 150.0,
+        "rendimiento": 4500.0
+      }
+    }
+  ]
+}
