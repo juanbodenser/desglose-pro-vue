@@ -421,6 +421,37 @@
         "sal fina": 4.0,
         "rendimiento": 575.0
       }
+    },
+    {
+      "nombre": "Salsa de Steak",
+      "ingredientes": {
+        "yema de huevo": 300.0,
+        "salsa perrins": 100.0,
+        "mostaza dijon": 100.0,
+        "AOVE": 300.0,
+        "rendimiento": 800.0
+      }
+    },
+    {
+      "nombre": "Vinagreta de Modena",
+      "ingredientes": {
+        "antico condimento": 30.0,
+        "aceite 0'4": 90.0,
+        "mostaza dijon": 10.0,
+        "sal fina": 2.0,
+        "rendimiento": 132.0
+      }
+    },
+    {
+      "nombre": "Aoshiso",
+      "ingredientes": {
+        "ahoshiso": 2070.0,
+        "AOVE": 675.0,
+        "kalamansi": 60.0,
+        "xantana": 0.6,
+        "vinagre de jerez": 135.0,
+        "rendimiento": 2940.0
+      }
     }
   ],
   "Postres": [
