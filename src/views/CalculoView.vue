@@ -41,9 +41,9 @@
             <p class="form-hint">Introduce el peso total de la bandeja con la preparación</p>
           </div>
           
-          <button class="calcular-btn" @click="calcular" :disabled="!peso || peso <= 0">
-            <span class="btn-icon">🧮</span>
-            <span>Calcular y Guardar</span>
+          <button class="calcular-btn" @click="calcular" :disabled="!peso || peso <= 0 || resultado !== null">
+            <span class="btn-icon">{{ resultado ? '✅' : '🧮' }}</span>
+            <span>{{ resultado ? 'Cálculo guardado' : 'Calcular y Guardar' }}</span>
           </button>
           
           <div v-if="error" class="error-message">
