@@ -323,7 +323,8 @@ h1 {
 @media print {
   .back-btn,
   .print-btn,
-  .danger-zone {
+  .danger-zone,
+  .summary-icon {
     display: none !important;
   }
 
