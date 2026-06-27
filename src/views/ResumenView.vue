@@ -29,12 +29,12 @@
             <h2>Totales acumulados</h2>
             <p class="summary-subtitle">{{ Object.keys(totales).length }} ingredientes diferentes</p>
           </div>
-          <button class="print-btn" @click="imprimir">
-            <span class="btn-icon">🖨️</span>
-            <span>Imprimir</span>
-          </button>
         </div>
         <Tabla :data="totales" />
+        <button class="print-btn" @click="imprimir">
+          <span class="btn-icon">🖨️</span>
+          <span>Imprimir</span>
+        </button>
       </div>
       
       <div class="danger-zone">
@@ -230,9 +230,11 @@ h1 {
 .print-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 10px 20px;
-  font-size: 14px;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 15px;
   font-weight: 500;
   border: none;
   border-radius: var(--radius-md);
@@ -241,7 +243,7 @@ h1 {
   cursor: pointer;
   transition: all 0.2s ease;
   font-family: inherit;
-  margin-left: auto;
+  margin-top: 24px;
 }
 
 .print-btn:hover {
