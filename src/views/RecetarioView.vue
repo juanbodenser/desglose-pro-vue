@@ -33,18 +33,35 @@
             </div>
             
             <div v-if="expandedRecetas[receta.nombre]" class="ingredientes-section">
+              <div class="multiplier-section">
+                <label class="multiplier-label">Multiplicador:</label>
+                <input 
+                  v-model.number="multiplicadores[receta.nombre]" 
+                  type="number" 
+                  min="0.1" 
+                  step="0.1" 
+                  placeholder="1"
+                  class="multiplier-input"
+                >
+                <span class="multiplier-hint">x</span>
+              </div>
+              
               <h4>Ingredientes</h4>
               <table class="ingredientes-table">
                 <thead>
                   <tr>
                     <th>Ingrediente</th>
                     <th>Base (g)</th>
+                    <th v-if="multiplicadores[receta.nombre] && multiplicadores[receta.nombre] !== 1">Multiplicado (g)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr v-for="(cant, ing) in receta.ingredientes" :key="ing">
                     <td v-if="ing !== 'rendimiento'">{{ ing }}</td>
                     <td v-if="ing !== 'rendimiento'" class="value-cell">{{ cant }}</td>
+                    <td v-if="ing !== 'rendimiento' && multiplicadores[receta.nombre] && multiplicadores[receta.nombre] !== 1" class="value-cell multiplied">
+                      {{ (cant * (multiplicadores[receta.nombre] || 1)).toFixed(1) }}
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -64,6 +81,7 @@ import { useRecetasStore } from '../stores/recetasStore.js'
 const router = useRouter()
 const recetasStore = useRecetasStore()
 const expandedRecetas = ref({})
+const multiplicadores = ref({})
 
 function goBack() {
   router.push({ name: 'partidas' })
@@ -250,6 +268,48 @@ h2 {
   border-top: 1px solid var(--border);
 }
 
+.multiplier-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: var(--surface-variant);
+  border-radius: var(--radius-md);
+}
+
+.multiplier-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.multiplier-input {
+  width: 80px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.multiplier-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.multiplier-hint {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
 .ingredientes-section h4 {
   font-size: 14px;
   font-weight: 600;
@@ -293,6 +353,11 @@ h2 {
   font-weight: 500;
   font-family: 'Inter', monospace;
   color: var(--primary);
+}
+
+.value-cell.multiplied {
+  color: var(--success);
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
