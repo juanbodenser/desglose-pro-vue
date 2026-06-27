@@ -18,15 +18,15 @@
     {
       "nombre": "Sofrito",
       "ingredientes": {
-        "Cebolla Blanca": 2000.0,
-        "Pimiento Rojo": 500.0,
-        "Pimiento Verde": 500.0,
+        "cebolla blanca": 2000.0,
+        "pimiento rojo": 500.0,
+        "pimiento verde": 500.0,
         "apio": 100.0,
-        "Tomate Rama": 110.0,
-        "Aceite Suave": 300.0,
-        "Ajo Pelado": 50.0,
-        "Carne Pimiento Choricero": 150.0,
-        "Sal Fina": 15.0,
+        "tomate rama": 110.0,
+        "aceite 0'4": 300.0,
+        "ajo pelado": 50.0,
+        "carne pimiento choricero": 150.0,
+        "sal fina": 15.0,
         "rendimiento": 2000.0
       }
     },
@@ -37,7 +37,7 @@
         "mantequilla": 450.0,
         "yuca": 500.0,
         "aceite de pimenton": 200.0,
-        "aceite suave": 200.0,
+        "aceite 0'4": 200.0,
         "sal fina": 45.0,
         "rendimiento": 4250.0
       }
@@ -50,7 +50,7 @@
         "oregano": 10.0,
         "sal fina": 100.0,
         "aceite ahumado": 200.0,
-        "aceite suave 0'4": 200.0,
+        "aceite 0'4": 200.0,
         "vinagre de cidra": 200.0,
         "ajo pelado": 60.0,
         "cilantro": 100.0,
@@ -89,7 +89,7 @@
       "nombre": "Salsa de Cigala",
       "ingredientes": {
         "cabeza de cigala": 1000.0,
-        "aceite suave": 50.0,
+        "aceite 0'4": 50.0,
         "cebolleta": 270.0,
         "zanahoria": 150.0,
         "ajo": 70.0,
@@ -108,7 +108,7 @@
         "patata": 700.0,
         "cebolla blanca": 200.0,
         "ajo": 20.0,
-        "aceite suave": 400.0,
+        "aceite 0'4": 400.0,
         "sal fina": 3.0,
         "rendimiento": 1350.0
       }
@@ -128,7 +128,7 @@
         "azafrán": 6.0,
         "mantequilla": 80.0,
         "sal": 15.0,
-        "aceite": 30.0,
+        "aceite 0'4": 30.0,
         "rendimiento": 2500.0
       }
     },
@@ -145,9 +145,9 @@
       "nombre": "Crema Verde",
       "ingredientes": {
         "patata": 85.0,
-        "Puerro": 200.0,
-        "Bimi tallos": 100,
-        "Ajo Aceite": 20.0,
+        "puerro": 200.0,
+        "bimi tallos": 100,
+        "ajo aceite": 20.0,
         "calabacin": 150.0,
         "pak choy": 200.0,
         "esparragos": 60.0,
@@ -165,7 +165,7 @@
         "chirlas": 4000.0,
         "ajo": 80.0,
         "apio": 80.0,
-        "aceite suave": 80.0,
+        "aceite 0'4": 80.0,
         "vino blanco": 500.0,
         "agua": 6000.0,
         "maizena": 50,
@@ -183,15 +183,15 @@
     {
       "nombre": "Guiso de Codorniz",
       "ingredientes": {
-        "Codorniz": 18.0,
-        "Tomate Rama": 600.0,
-        "Cebolla Morada": 2000.0,
-        "Aji Amarillo": 120.0,
-        "Cilanto": 100.0,
-        "Cerveza Negra": 666.0,
-        "Aceite Suave": 50.0,
-        "Sal Fina": 30.0,
-        "Caldo de Pollo": 1500.0,
+        "codorniz": 18.0,
+        "tomate rama": 600.0,
+        "cebolla morada": 2000.0,
+        "aji amarillo": 120.0,
+        "cilanto": 100.0,
+        "cerveza negra": 666.0,
+        "aceite 0'4": 50.0,
+        "sal fina": 30.0,
+        "caldo de pollo": 1500.0,
         "rendimiento": 3026.0
       }
     },
@@ -209,7 +209,7 @@
       "ingredientes": {
         "pimenton de la vera": 100.0,
         "cabeza de ajo": 120.0,
-        "aceite 0,4": 500.0,
+        "aceite 0'4": 500.0,
         "rendimiento": 500.0
       }
     }
@@ -301,41 +301,125 @@
     {
       "nombre": "Salsa de Ají Amarillo",
       "ingredientes": {
-        "aji amarillo": 800.0,
-        "ajo pelado": 120.0,
-        "cebolla morada": 960.0,
-        "tallos de cilantro": 56.0,
-        "aceite 0,4": 1600.0,
-        "pimiento amarillo": 1040.0,
-        "sal": 96.0,
-        "jengibre": 144.0,
-        "lima": 1200.0,
-        "corvina": 360.0,
-        "rendimiento": 5600.0
+        "aji amarillo": 400.0,
+        "apio": 60.0,
+        "ajo pelado": 60.0,
+        "cebolla morada": 480.0,
+        "tallos de cilantro": 28.0,
+        "aceite 0'4": 800.0,
+        "pimiento amarillo": 520.0,
+        "sal": 48.0,
+        "jengibre": 72.0,
+        "lima": 600.0,
+        "corvina": 180.0,
+        "rendimiento": 2800.0
       }
     },
     {
-      "nombre": "Salpicon de Bogavante",
+      "nombre": "Salpicon de Mariscos",
       "ingredientes": {
-        "tomate": 300.0,
-        "pimiento rojo": 400.0,
-        "pimiento verde": 400.0,
+        "bogavante": 16.0,
+        "cola de gambón": 1600.0,
+        "langostino": 1600.0,
+        "tomate rama": 500.0,
+        "pimiento rojo": 350.0,
+        "pimiento verde": 350.0,
+        "cebolla morada": 800.0,
+        "pasta de aji amarillo": 180.0,
+        "mostaza dijon": 120.0,
+        "condimento bianco": 300.0,
+        "aceite 0'4": 1020.0,
+        "AOVE": 500.0,
+        "yema cocida": 180.0,
         "sal fina": 15.0,
-        "cebolla morada": 200.0,
-        "bogavante": 500.0,
-        "rendimiento": 1800.0
+        "rendimiento": 8000.0
       }
     },
     {
       "nombre": "Ensaladilla",
       "ingredientes": {
-        "zanahoria": 200.0,
-        "sal fina": 15.0,
-        "patata": 200.0,
-        "guisantes": 100.0,
-        "atun": 200.0,
-        "mayonesa": 100.0,
-        "rendimiento": 700.0
+        "patatas": 5000.0,
+        "zanahoria": 600.0,
+        "huevos": 10.0,
+        "mayonesa": 3500.0,
+        "cola de gambón": 2000.0,
+        "aceite 0'4": 1500.0,
+        "sal fina": 10.0,
+        "pimienta negra": 10.0,
+        "ajo pelado": 50.0,
+        "rendimiento": 9000.0
+      }
+    },
+    {
+      "nombre": "Gazpacho Carta",
+      "ingredientes": {
+        "tomate moruno": 1500.0,
+        "tomate pera": 1000.0,
+        "cebolleta blanca": 210.0,
+        "pimiento rojo": 220.0,
+        "manzana golden": 230.0,
+        "ajo pelado": 10.0,
+        "condimento bianco": 70.0,
+        "vinagre de jerez": 60.0,
+        "sal fina": 25.0,
+        "albahaca": 10.0,
+        "aceite 0'4": 400.0,
+        "rendimiento": 3350.0
+      }
+    },
+    {
+      "nombre": "Vinagreta de Oregano",
+      "ingredientes": {
+        "oregano fresco": 5.0,
+        "AOVE": 450.0,
+        "ajo pelado": 3.0,
+        "mostaza dijon": 25.0,
+        "salsa perrins": 8.0,
+        "pimienta negra": 3.0,
+        "sal maldon": 15.0,
+        "lima": 13.0,
+        "antico condimento": 150.0,
+        "agua": 150.0,
+        "rendimiento": 822.0
+      }
+    },
+    {
+      "nombre": "Mayonesa Picante",
+      "ingredientes": {
+        "mayonesa hellmans": 400.0,
+        "mostaza dijon": 50.0,
+        "kimchi base": 20.0,
+        "miel de flores": 50.0,
+        "gochujang": 10.0,
+        "chili garlic": 20.0,
+        "rendimiento": 550.0
+      }
+    },
+    {
+      "nombre": "Vinagreta de Piña",
+      "ingredientes": {
+        "cebolleta blanca": 74.0,
+        "piña": 126.0,
+        "tomate semi seco": 126.0,
+        "mostaza dijon": 10.0,
+        "pasta de aji amarillo": 10.0,
+        "vinagre de jerez": 46.0,
+        "salsa de soja sin gluten": 12.0,
+        "aceite 0'4": 140.0,
+        "rendimiento": 544.0
+      }
+    },
+    {
+      "nombre": "Crema de Aguacate",
+      "ingredientes": {
+        "aguacate": 460.0,
+        "hoja de shiso verde": 6.0,
+        "pasta de rocoto": 10.0,
+        "aceite 0'4": 50.0,
+        "lima": 20.0,
+        "agua": 25.0,
+        "sal fina": 4.0,
+        "rendimiento": 575.0
       }
     }
   ],
@@ -608,7 +692,7 @@
         "cebolla pelada": 2500.0,
         "pimiento verde": 230.0,
         "pimiento rojo": 230.0,
-        "aceite suave": 750.0,
+        "aceite 0'4": 750.0,
         "sal fina": 250.0,
         "zanahoria": 450.0,
         "ajo pelado": 250.0,
@@ -622,7 +706,7 @@
     {
       "nombre": "Pomodoro",
       "ingredientes": {
-        "aceite oliva": 400.0,
+        "AOVE": 400.0,
         "ajo pelado": 400.0,
         "cebolla pelada": 3000.0,
         "puerros": 1200.0,
@@ -651,7 +735,7 @@
         "zanahoria": 1800.0,
         "perejil": 500.0,
         "gallina": 12000.0,
-        "aceite": 2500.0,
+        "aceite 0'4": 2500.0,
         "agua": 180000.0,
         "sal": 1000.0,
         "rendimiento": 127000.0
@@ -669,13 +753,13 @@
         "pimiento rojo": 900.0,
         "zanahoria": 1800.0,
         "perejil": 500.0,
-        "aceite": 2500.0,
+        "aceite 0'4": 2500.0,
         "agua": 180000.0,
         "vino blanco": 1000.0,
         "brandy o coñac": 1000.0,
         "tomate concentrado": 1600.0,
         "tomate multipelate": 3.0,
-        "pimienta negra grano": 100.0,
+        "pimienta negra": 100.0,
         "cabeza de carabineros": 25000.0,
         "comino molido": 30.0,
         "sal": 1000.0,
@@ -699,7 +783,7 @@
     {
       "nombre": "Salsa Verde",
       "ingredientes": {
-        "aceite 0,4": 300.0,
+        "aceite 0'4": 300.0,
         "harina pichi": 300.0,
         "perejil": 110.0,
         "maizena": 100.0,
