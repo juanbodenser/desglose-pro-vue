@@ -565,13 +565,13 @@ h1 {
     color: #000;
   }
 
-  ::v-deep table {
+  :deep(table) {
     border-collapse: collapse;
     width: 100%;
   }
 
-  ::v-deep th,
-  ::v-deep td {
+  :deep(th),
+  :deep(td) {
     border: 1px solid #000;
     padding: 8px;
   }
