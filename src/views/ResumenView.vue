@@ -29,6 +29,10 @@
             <h2>Totales acumulados</h2>
             <p class="summary-subtitle">{{ Object.keys(totales).length }} ingredientes diferentes</p>
           </div>
+          <button class="print-btn" @click="imprimir">
+            <span class="btn-icon">🖨️</span>
+            <span>Imprimir</span>
+          </button>
         </div>
         <Tabla :data="totales" />
       </div>
@@ -69,6 +73,10 @@ function limpiarHistorial() {
     clearStorage()
     totales.value = obtenerResumenTotales()
   }
+}
+
+function imprimir() {
+  window.print()
 }
 </script>
 
@@ -219,6 +227,29 @@ h1 {
   margin: 0;
 }
 
+.print-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  margin-left: auto;
+}
+
+.print-btn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
 .danger-zone {
   background: var(--surface);
   border: 2px solid var(--danger);
@@ -284,6 +315,50 @@ h1 {
 
   .danger-zone {
     padding: 20px;
+  }
+}
+
+@media print {
+  .back-btn,
+  .print-btn,
+  .danger-zone {
+    display: none !important;
+  }
+
+  .resumen-view {
+    max-width: none;
+    margin: 0;
+  }
+
+  .page-header {
+    margin-bottom: 16px;
+  }
+
+  .summary-card {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .summary-header {
+    border-bottom: 2px solid #000;
+  }
+
+  h1,
+  h2,
+  .summary-subtitle {
+    color: #000;
+  }
+
+  ::v-deep table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  ::v-deep th,
+  ::v-deep td {
+    border: 1px solid #000;
+    padding: 8px;
   }
 }
 </style>
