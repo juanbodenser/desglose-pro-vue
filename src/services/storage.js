@@ -1,4 +1,5 @@
 const STORAGE_KEY = "inventarioCalculos";
+const SUELTOS_KEY = "ingredientesSueltos";
 
 export function guardarCalculo(partida, recetaNombre, peso, resultado) {
   let historial = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
@@ -25,6 +26,7 @@ export function limpiarHistorial() {
 
 export function obtenerResumenTotales() {
   const historial = obtenerHistorial();
+  const sueltos = obtenerIngredientesSueltos();
   const totales = {};
 
   historial.forEach(registro => {
@@ -34,5 +36,25 @@ export function obtenerResumenTotales() {
     });
   });
 
+  Object.entries(sueltos).forEach(([ingrediente, gramos]) => {
+    if (!totales[ingrediente]) totales[ingrediente] = 0;
+    totales[ingrediente] += gramos;
+  });
+
   return totales;
+}
+
+export function guardarIngredienteSueto(nombre, gramos) {
+  const sueltos = obtenerIngredientesSueltos();
+  if (!sueltos[nombre]) sueltos[nombre] = 0;
+  sueltos[nombre] += gramos;
+  localStorage.setItem(SUELTOS_KEY, JSON.stringify(sueltos));
+}
+
+export function obtenerIngredientesSueltos() {
+  return JSON.parse(localStorage.getItem(SUELTOS_KEY)) || {};
+}
+
+export function limpiarIngredientesSueltos() {
+  localStorage.removeItem(SUELTOS_KEY);
 }

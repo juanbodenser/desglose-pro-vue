@@ -37,6 +37,51 @@
         </button>
       </div>
       
+      <div class="sueltos-card">
+        <div class="sueltos-header">
+          <span class="sueltos-icon">➕</span>
+          <h3>Agregar ingrediente suelto</h3>
+        </div>
+        <div class="sueltos-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Nombre del ingrediente</label>
+              <input 
+                v-model="nuevoSueto.nombre" 
+                type="text" 
+                placeholder="Ej: Biberones de aceite"
+                class="form-input"
+              >
+            </div>
+            <div class="form-group">
+              <label class="form-label">Cantidad (g)</label>
+              <input 
+                v-model.number="nuevoSueto.gramos" 
+                type="number" 
+                placeholder="Ej: 500"
+                min="0"
+                step="0.1"
+                class="form-input"
+              >
+            </div>
+          </div>
+          <button class="add-sueto-btn" @click="agregarSueto" :disabled="!nuevoSueto.nombre || !nuevoSueto.gramos">
+            <span class="btn-icon">➕</span>
+            <span>Agregar</span>
+          </button>
+        </div>
+        
+        <div v-if="Object.keys(ingredientesSueltos).length > 0" class="sueltos-list">
+          <h4>Ingredientes sueltos agregados</h4>
+          <div class="sueltos-items">
+            <div v-for="(gramos, nombre) in ingredientesSueltos" :key="nombre" class="sueltos-item">
+              <span class="sueltos-name">{{ nombre }}</span>
+              <span class="sueltos-amount">{{ gramos }}g</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div class="danger-zone">
         <h3>Zona de peligro</h3>
         <p class="danger-text">Esta acción eliminará permanentemente todo el historial de cálculos</p>
@@ -52,15 +97,18 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { obtenerResumenTotales, limpiarHistorial as clearStorage } from '../services/storage.js'
+import { obtenerResumenTotales, limpiarHistorial as clearStorage, guardarIngredienteSueto, obtenerIngredientesSueltos } from '../services/storage.js'
 import Tabla from '../components/Tabla.vue'
 
 const router = useRouter()
 const totales = ref({})
 const loading = ref(true)
+const nuevoSueto = ref({ nombre: '', gramos: '' })
+const ingredientesSueltos = ref({})
 
 onMounted(() => {
   totales.value = obtenerResumenTotales()
+  ingredientesSueltos.value = obtenerIngredientesSueltos()
   loading.value = false
 })
 
@@ -77,6 +125,15 @@ function limpiarHistorial() {
 
 function imprimir() {
   window.print()
+}
+
+function agregarSueto() {
+  if (nuevoSueto.value.nombre && nuevoSueto.value.gramos) {
+    guardarIngredienteSueto(nuevoSueto.value.nombre, nuevoSueto.value.gramos)
+    ingredientesSueltos.value = obtenerIngredientesSueltos()
+    totales.value = obtenerResumenTotales()
+    nuevoSueto.value = { nombre: '', gramos: '' }
+  }
 }
 </script>
 
@@ -300,6 +357,152 @@ h1 {
   font-size: 18px;
 }
 
+.sueltos-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.sueltos-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sueltos-icon {
+  font-size: 28px;
+}
+
+.sueltos-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.sueltos-form {
+  margin-bottom: 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.form-input {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-variant);
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.form-input::placeholder {
+  color: var(--text-muted);
+}
+
+.add-sueto-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.add-sueto-btn:hover:not(:disabled) {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.add-sueto-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.sueltos-list {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.sueltos-list h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 16px 0;
+}
+
+.sueltos-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sueltos-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--surface-variant);
+  border-radius: var(--radius-md);
+}
+
+.sueltos-name {
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.sueltos-amount {
+  font-size: 14px;
+  color: var(--primary);
+  font-weight: 600;
+  font-family: 'Inter', monospace;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 24px;
@@ -318,13 +521,22 @@ h1 {
   .danger-zone {
     padding: 20px;
   }
+
+  .sueltos-card {
+    padding: 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media print {
   .back-btn,
   .print-btn,
   .danger-zone,
-  .summary-icon {
+  .summary-icon,
+  .sueltos-card {
     display: none !important;
   }
 
