@@ -1,9 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
-// Manejar redirección del 404.html para GitHub Pages
-const isGitHubPages = window.location.hostname === 'juanbodenser.github.io'
 const router = createRouter({
-  history: createWebHistory('/desglose-pro-vue/'),
+  history: createWebHashHistory('/desglose-pro-vue/'),
   routes: [
     {
       path: '/',
@@ -34,13 +32,5 @@ const router = createRouter({
     }
   ]
 })
-
-// Manejar redirección desde 404.html para GitHub Pages
-if (isGitHubPages) {
-  const path = window.location.search.match(/[?&]p=([^&]+)/)
-  if (path) {
-    router.replace(path[1])
-  }
-}
 
 export default router
