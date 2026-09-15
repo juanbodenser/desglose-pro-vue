@@ -22,6 +22,7 @@ export function obtenerHistorial() {
 
 export function limpiarHistorial() {
   localStorage.removeItem(STORAGE_KEY);
+  localStorage.removeItem(SUELTOS_KEY);
 }
 
 export function obtenerResumenTotales() {

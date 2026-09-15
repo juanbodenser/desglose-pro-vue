@@ -120,6 +120,7 @@ function limpiarHistorial() {
   if (confirm('¿Estás seguro de que quieres borrar todo el historial de cálculos? Esta acción no se puede deshacer.')) {
     clearStorage()
     totales.value = obtenerResumenTotales()
+    ingredientesSueltos.value = obtenerIngredientesSueltos()
   }
 }
 
