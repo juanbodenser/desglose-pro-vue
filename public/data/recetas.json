@@ -212,6 +212,19 @@
         "aceite 0'4": 500.0,
         "rendimiento": 500.0
       }
+    },
+    {
+      "nombre": "Boletus",
+      "ingredientes": {
+        "cebolla blanca": 5000.0,
+        "boletus ccongelado": 3000.0,
+        "aceite 0'4": 100.0,
+        "caldo de gallina": 30000,
+        "foie congelado": 250,
+        "pedro ximenez": 75,
+        "oporto bandeira": 75,
+        "rendimiento": 15500.0
+      }
     }
   ],
   "Freidora": [
